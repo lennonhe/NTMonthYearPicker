@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C3DE3D4F20A2264A00F6744A /* TestWithAutoLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3DE3D4D20A2264A00F6744A /* TestWithAutoLayoutViewController.m */; };
+		C3DE3D5020A2264A00F6744A /* TestWithAutoLayoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3DE3D4E20A2264A00F6744A /* TestWithAutoLayoutViewController.xib */; };
 		F4EF470D182892B8001CC6B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4EF470C182892B8001CC6B2 /* Foundation.framework */; };
 		F4EF470F182892B8001CC6B2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4EF470E182892B8001CC6B2 /* CoreGraphics.framework */; };
 		F4EF4711182892B8001CC6B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4EF4710182892B8001CC6B2 /* UIKit.framework */; };
@@ -20,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C3DE3D4C20A2264A00F6744A /* TestWithAutoLayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestWithAutoLayoutViewController.h; sourceTree = "<group>"; };
+		C3DE3D4D20A2264A00F6744A /* TestWithAutoLayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestWithAutoLayoutViewController.m; sourceTree = "<group>"; };
+		C3DE3D4E20A2264A00F6744A /* TestWithAutoLayoutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestWithAutoLayoutViewController.xib; sourceTree = "<group>"; };
 		F4EF4709182892B8001CC6B2 /* NTMonthYearPickerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NTMonthYearPickerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4EF470C182892B8001CC6B2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F4EF470E182892B8001CC6B2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -90,6 +95,9 @@
 				F4EF473D18289369001CC6B2 /* ViewController.xib */,
 				F4EF471E182892B8001CC6B2 /* Images.xcassets */,
 				F4EF4713182892B8001CC6B2 /* Supporting Files */,
+				C3DE3D4C20A2264A00F6744A /* TestWithAutoLayoutViewController.h */,
+				C3DE3D4D20A2264A00F6744A /* TestWithAutoLayoutViewController.m */,
+				C3DE3D4E20A2264A00F6744A /* TestWithAutoLayoutViewController.xib */,
 			);
 			path = NTMonthYearPickerDemo;
 			sourceTree = "<group>";
@@ -169,6 +177,7 @@
 				F4EF4717182892B8001CC6B2 /* InfoPlist.strings in Resources */,
 				F4EF473F18289369001CC6B2 /* ViewController.xib in Resources */,
 				F4EF471F182892B8001CC6B2 /* Images.xcassets in Resources */,
+				C3DE3D5020A2264A00F6744A /* TestWithAutoLayoutViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +190,7 @@
 			files = (
 				F4EF473E18289369001CC6B2 /* ViewController.m in Sources */,
 				F4EF47441828939F001CC6B2 /* NTMonthYearPicker.m in Sources */,
+				C3DE3D4F20A2264A00F6744A /* TestWithAutoLayoutViewController.m in Sources */,
 				F4EF471D182892B8001CC6B2 /* AppDelegate.m in Sources */,
 				F4EF4719182892B8001CC6B2 /* main.m in Sources */,
 			);

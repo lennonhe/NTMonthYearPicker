@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "TestWithAutoLayoutViewController.h"
 
 @implementation AppDelegate
 
@@ -15,7 +16,9 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
 
-    ViewController *vc = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+//    ViewController *vc = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+    TestWithAutoLayoutViewController *vc =
+    [[TestWithAutoLayoutViewController alloc] initWithNibName:@"TestWithAutoLayoutViewController" bundle:nil];
     self.window.rootViewController = vc;
 
     [self.window makeKeyAndVisible];

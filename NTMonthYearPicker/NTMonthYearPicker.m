@@ -374,7 +374,6 @@ numberOfRowsInComponent:(NSInteger)component {
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        _pickerView = [[NTMonthYearPickerView alloc] initWithFrame:frame];
         [self initCommon];
     }
     return self;
@@ -383,24 +382,20 @@ numberOfRowsInComponent:(NSInteger)component {
 - (id)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
     if (self) {
-        _pickerView = [[NTMonthYearPickerView alloc] initWithCoder:aDecoder];
-
-        CGSize pickerSize = [_pickerView sizeThatFits:CGSizeZero];
-        _pickerView.frame = CGRectMake( 0, 0, pickerSize.width, pickerSize.height );
-
         [self initCommon];
     }
     return self;
 }
 
 - (void)initCommon {
-    self.frame = _pickerView.frame;
+    _pickerView = [[NTMonthYearPickerView alloc] initWithFrame:CGRectZero];
+    _pickerView.translatesAutoresizingMaskIntoConstraints = NO;
     _pickerView.pickerDelegate = self;
     [self addSubview:_pickerView];
-}
-
-- (CGSize)sizeThatFits:(CGSize)size {
-    return [_pickerView sizeThatFits:size];
+    [_pickerView.leadingAnchor constraintEqualToAnchor:self.leadingAnchor].active = YES;
+    [_pickerView.topAnchor constraintEqualToAnchor:self.topAnchor].active = YES;
+    [_pickerView.trailingAnchor constraintEqualToAnchor:self.trailingAnchor].active = YES;
+    [_pickerView.bottomAnchor constraintEqualToAnchor:self.bottomAnchor].active = YES;
 }
 
 - (void)didSelectDate {
